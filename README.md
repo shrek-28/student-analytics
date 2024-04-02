@@ -10,6 +10,32 @@ This project done using PGAdmin and PostgreSQL, analyses the effect of various f
 - Various factors, and their cumulative and individual effects on average student and individual student scores.
 
 # Creating the table and Loading the Dataset
-- This Repository contains the web link for the analysis of these projects, and the queries and the results of these analyses.
-- The SQL files are also available. PGAdmin4 was used to execute the queries on a PostGreSQL database.
-  
+Command used for creating the table:
+````sql
+CREATE TABLE "Student Analytics"(
+gender varchar(100),
+race varchar(100),
+parental_level_of_education varchar(100),
+	lunch varchar(100),
+	test_preparation_course varchar(100),
+	"math score" int, 
+	"reading score" int,
+	"writing score" int
+);
+
+````
+The dataset was loaded into the table by usage of the PGAdmin Import tool.  
+
+An overview of the dataset was loaded using the following command:
+````sql
+SELECT * FROM student_analytics LIMIT 5;
+````
+result:
+**| Project Name | DBMS Used | Major Functions |  Project Description | **
+|---|---|---|---|---|
+|Female|group B|bachelor's degree|standard|none
+"female"	"group B"	"bachelor's degree"	"standard"	"none"	72	72	74
+"female"	"group C"	"some college"	"standard"	"completed"	69	90	88
+"female"	"group B"	"master's degree"	"standard"	"none"	90	95	93
+"male"	"group A"	"associate's degree"	"free/reduced"	"none"	47	57	44
+"male"	"group C"	"some college"	"standard"	"none"	76	78	75
