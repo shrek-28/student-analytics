@@ -4,6 +4,7 @@ This project done using PGAdmin and PostgreSQL, analyses the effect of various f
 ## 📚 Table of Contents
 - [Dataset Details](#Dataset-Details)
 - [Creating the table and Loading the Dataset](#Creating-the-table-and-Loading-the-Dataset)
+- [Database Analytics](#Database-Analytics)
 
 # Dataset Details 
 - The Dataset has 1000 rows, and eight columns: race, gender/ethnicity, parental level of education, lunch, test preparation course, math score, reading score and writing score.
@@ -39,3 +40,18 @@ result:
 | male | group A | associate's degree | free/reduced |none | 47 | 57 | 44 |
 | male | group c | some degree | standard |none | 76 | 78 | 75 |
 
+# Database Analytics
+
+1. What is the average math, reading, and writing score?
+````sql
+SELECT round(avg(math_score),2) as avg_math_score, 
+round(avg(reading_score),2) as avg_reading_score,
+round(avg(writing_score),2) as avg_writing_score 
+FROM student_analytics;
+````
+Result: 
+| avg_math_score | avg_reading_score | avg_writing_score |
+|-----|------|-----|
+|66.09 | 69.17 | 68.05 |
+2. 
+3. 
