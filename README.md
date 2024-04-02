@@ -31,9 +31,11 @@ An overview of the dataset was loaded using the following command:
 SELECT * FROM student_analytics LIMIT 5;
 ````
 result:
-| customer_id | total_points | 
-| ----------- | ---------- |
-| A           | 1370 |
-| B           | 820 |
-| A           | 1020 |
-| B           | 320 |
+| Gender | Race | Parental_level_of_education | lunch | test_preparation_course | math_score | reading_score | writing_score
+| ---- | ----- | ----- | ----- | ------ | ----- | -----| -----|
+|female | group B | bachelor's degree | standard |none | 72 | 72 | 74 |
+|female | group C| some college | standard | completed | 69 | 90 | 88 |
+|female | group B | master's degree | standard |none | 90 | 95 | 93 |
+| male | group A | associate's degree | free/reduced |none | 47 | 57 | 44 |
+| male | group c | some degree | standard |none | 76 | 78 | 75 |
+
