@@ -2,10 +2,10 @@
 This project done using PGAdmin and PostgreSQL, analyses the effect of various factors on student scores in reading, math and writing. 
 
 ## 📚 Table of Contents
-- [Dataset Details](#Datasetdetail)
-- [Creating the table and Loading the Dataset](#creating)
+- [Dataset Details](#Dataset-Details)
+- [Creating the table and Loading the Dataset](#Creating-the-table-and-Loading-the-Dataset)
 
-# DatasetDetails 
+# Dataset Details 
 - The Dataset has 1000 rows, and eight columns: race, gender/ethnicity, parental level of education, lunch, test preparation course, math score, reading score and writing score.
 - Various factors, and their cumulative and individual effects on average student and individual student scores.
 
